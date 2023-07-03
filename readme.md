@@ -32,6 +32,7 @@ The example is presented as a set of related Python notebooks
 ### Limitations
 -- Sythetic timeseries limitations: The example code here does *not* correctly sequence the time series data. It is unclear to me if this is due to a failure to configure the PAR sythesizer with correct metadata or a limtation in the approach. To use the synthesised data with a strict timeseries it will be necessary to apply some post processing  
 -- Time series plots: The plots that are rendered of the training data and the synthetic data ignore the fact that there time series data is incomplete (e.g. the training data contains  hours worth of data, and the synthetic data doesnt follow a precise time series interval). For this reason they are approximate representations    
+-- Github copilot is currently not aware of the latest version of the SDV libraries and will make code suggestions that are not supported. See the SDV documentation  
  
 
 
@@ -45,7 +46,8 @@ The example is presented as a set of related Python notebooks
 ### Python libraries used 
 Installed using `Conda install <package name>`
 - pandas
-- re
+- re 
+- pyplot (for the visualisation notebooks only)
 - SDV (If using Conda, this may need to be installed using `pip install svd` rather than via `conda / conda install -c conda-forge sdv` due to issues experienced installing from the conda locations)
 
 
