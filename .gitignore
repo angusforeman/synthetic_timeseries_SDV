@@ -1,2 +1,4 @@
 /.excluded
 /.vscode
+/master_concatenated_stock_input_data.csv
+/synthetic_Intraday_PARstock.csv

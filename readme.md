@@ -2,13 +2,15 @@
 
 ## Overview
 
-An example use of the Synthetic Data Value (SDV) https://docs.sdv.dev/sdv/ toolkit to generate synthetic 'stock ticker' time series data. The code uses sample stock data (from Kaggle) with a 5 minute sample time to train a Probabilistic AutoRegressive Neural Network. This model is then used to generate synthetic data that consists of multiple sequences of stock data.  This example is partly based upon the [SDV sequence demo](https://colab.research.google.com/drive/1cT4-jFK2Bxe93QudC_CwHq_yVCcNcxal?usp=sharing) 
+An example use of the **Synthetic Data Vault** (SDV) https://docs.sdv.dev/sdv/ toolkit to generate synthetic 'stock ticker' time series data. The code uses sample stock data (**from Kaggle**) with a 5 minute sample time to train a **Probabilistic AutoRegressive Neural Network** (PAR NN). This model is then used to generate synthetic data that consists of multiple sequences of stock data.  This example is partly based upon the [SDV sequence demo](https://colab.research.google.com/drive/1cT4-jFK2Bxe93QudC_CwHq_yVCcNcxal?usp=sharing) 
 
 The PAR sequencer in SDV needs a multi sequence data set to work upon, which effectively means it needs data that consists of multiple time series samples for multiple stock symbols (where the stock symbol is the sequence)
 
 To generate a multisequence file for training from the Kaggle data set,the sample data is concatenated together and a "Symbol" field created (as the sample data sets have the stock symbol represented in the filename only)   
 
-The sample is presented as a set of numbered Python notebook files each of which should be run in sequential order if running for the first time. The files are broken down into each step to allow for effective experimentation with factors such as number & size of training data, number of epochs needed, date and time sequencing factors etc etc. 
+The sample is presented as a set of numbered **Python notebook files** each of which should be run in sequential order if running for the first time. The files are broken down into each step to allow for effective experimentation with factors such as number & size of training data, number of epochs needed, date and time sequencing factors etc etc. 
+
+**See below for notes on the IDE, links to the training data and runtime python libraries needed etc** 
 
 ### Data folder & file structure 
 The example is presented as a set of related Python notebooks
@@ -40,7 +42,7 @@ The example is presented as a set of related Python notebooks
 - VS Code Python extension 
 
 
-### Python libraries used (show 
+### Python libraries used 
 Installed using `Conda install <package name>`
 - pandas
 - re
