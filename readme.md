@@ -12,6 +12,8 @@ The sample is presented as a set of numbered **Python notebook files** each of w
 
 **See below for notes on the IDE, links to the training data and runtime python libraries needed etc** 
 
+For an overview of SDV compared to LLMs as a mechanism for producing synthetic data see [this short summary](SyntheticDatatechniques.md)
+
 ### Data folder & file structure 
 The example is presented as a set of related Python notebooks
 -  The sample assumes the following folder structure is present `./KaggleDataSet/5 Min/Stocks/SubSet'  
